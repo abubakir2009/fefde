@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Fonts SmartPOS -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap"
+        rel="stylesheet">
+
+
+    <link rel="stylesheet" href="./css/style.css">
+    <title>food new</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="inner">
+            <aside>
+                <div class="Logo">
+                    <h1>Smart<span>POS</span></h1>
+                </div>
+                <div class="navsidebar">
+                    <ul>
+                        <li class="active"><i class="fa-solid fa-burger"></i>
+                            <p>Burger</p>
+                        </li>
+                        <li><i class="fa-solid fa-pizza-slice"></i>
+                            <p>Pizza</p>
+                        </li>
+                        <li><i class="fa-solid fa-mug-hot"></i>
+                            <p>Coffee</p>
+                        </li>
+                        <li><i class="fa-solid fa-bread-slice"></i>
+                            <p>Bread</p>
+                        </li>
+                        <li><i class="fa-solid fa-wine-glass"></i>
+                            <p>Beverages</p>
+                        </li>
+                    </ul>
+                </div>
+            </aside>
+            <main>
+                <div class="main__card">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </div>
+                <div class="main__header">
+                    <div class="main__title">
+                        <h1>Burgers</h1>
+                        <img src="./img/Rectangle 6.png" alt="Rectangle 6">
+                    </div>
+                    <div class="main__input">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <input type="text" id="searchInput" placeholder="Search">
+                    </div>
+                </div>
+                <div class="main__food"></div>
+            </main>
+        </div>
+    </div>
+
+    <div class="modal" id="cartModal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Your Cart</h2>
+            <ul id="cartItems"></ul>
+            <p id="emptyCartMessage" class="empty-cart-message">Your cart is empty.</p>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
